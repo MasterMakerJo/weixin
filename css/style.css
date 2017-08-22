@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+}
+.content{
+	position: absolute;
+}
+.page{
+	position: relative;
+}
+.page1{
+	background: #0cf;
+}
+.page2{
+	background: #000;	
+}
+.page3{
+	background: #f00;
+}
+.page4{
+	background: #0cf;
+}
+
+img{
+	position: absolute;
+}
+.page1-title{
+	width:60%;
+	left: 20%;
+	top: 10%;
+}
+.page1-building{
+	bottom: 0;
+	width: 100%;
+	/*yincang*/
+	display: none;
+}
+.page1-elements,.page1-cloudys{
+	width: 100%;
+	height: 100%;
+	animation: zoo 2s infinite;
+}
+.page1-avatar{
+	/*刚开始的宽度为0，才能看不见*/
+	width: 0%;
+	left: 15%;
+	bottom: 30%;
+	animation: people 2s infinite;
+}
+.page1-flowers1{
+	left: 10%;
+	top: 10%;
+	height: 15%;
+	/*设置动画:动画名称 动画时间 动画类型（无限循环类型）*/
+	animation:flower 3s infinite;
+}
+.page1-flowers2{
+	right: 18%;
+	top: 22%;
+	height: 15%;
+	animation:flower 3s infinite;
+}
+/*实现动画*/
+@keyframes flower{
+	0%{}
+	25%{transform: rotate(30deg);}
+	50%{transform: rotate(0);}
+	75%{transform: rotate(-30deg);}
+	100%{transform: rotate(0);}
+}
+@keyframes zoo{
+	0%{}
+	50%{transform: scale(0.9);}
+	100%{transform: scale(1);}
+}
+@keyframes people{
+	0%{}
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1);}
+}
+.page2-bg{
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.page2-farm{
+	right: 0;
+	top: 30%;
+	width: 90%;
+	display: none;
+}
+.page2-it{
+	top: 60%;
+	right: 0;
+	width: 90%;
+	display: none;
+}
+.page3-bg{
+	width: 100%;
+	height: 100%;
+}
+.page3-station{
+	bottom: 0;
+	width: 100%;
+}
+.page3-bus{
+	left: 0;
+	width: 65%;
+	bottom: 10%;
+}
+.page3-avatar{
+	right: 0;
+	bottom: 13%;
+	height: 15%;
+}
+.page3-title{
+	left: 0;
+	top: 10%;
+	height: 5%;
+	display: none;
+}
+.page3-bustitle{
+	left: 0;
+	top: 18%;
+	height: 5%;
+	display: none;
+}
+.page3-wall{
+	right: 0;
+	bottom: 0;
+	height: 70%;
+	display: none;
+}
+.page3-teamavatar{
+	right: 15%;
+	bottom: 66%;
+	width: 20%;
+	display: none;
+}
+.page3-space{
+	/*刚开始的宽度为0*/
+	width: 0%;
+	left: 5%;
+	top: 20%;
+}
+.page3-where{
+	/*刚开始的宽度为0*/
+	width: 0%;
+	left: 10%;
+	bottom: 15%;
+}
+.page4-bg{
+	width: 100%;
+	height: 100%;
+}
+.page4-off{
+	bottom: 0;
+	height: 70%;
+	left: 5%;
+	z-index: 10;
+}
+.page4-title{
+	right: 0;
+	width: 40%;
+	top: 15%;
+}
+.page4-guide{
+	width: 50%;
+	left: 25%;
+	top: 40%;
+	animation: suofang 2s infinite;
+}
+@keyframes suofang{
+	0%{}
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1);}
+}
+.page4-onbg{
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+.page4-you{
+	width: 50%;
+	left: 25%;
+	top: 15%;
+	display: none;
+}
+.up{
+	/*position: fixed;*/
+	left: 40%;
+	bottom: 3%;
+	animation: aup 2s infinite;
+}
+@keyframes aup{
+	0%{}
+	/*50%{transform: translateY(10px);}*/
+	50%{bottom: 5%;}
+	100%{bottom: 3%;}
+	/*100%{transform: translateY(0px);}*/
+}
+.musicbtn{
+	right: 5%;
+	top: 5%;
+	width: 15%;
+	animation: musicroll 3s infinite;
+}
+@keyframes musicroll{
+	0%{}
+	100%{transform: rotate(360deg);}
+}

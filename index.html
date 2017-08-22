@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>微信场景页,招商银行宣传片</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+	<div class="content">
+		<div class="page page1">
+			<img src="images/indexTxt.png" class="page1-title"/>
+			<img src="images/indexFlowers01.png" class="page1-flowers1"/>
+			<img src="images/indexFlowers02.png" class="page1-flowers2"/>
+			<img src="images/endCloudys.png" class="page1-cloudys"/>
+			<img src="images/indexElements.png" class="page1-elements"/>
+			<img src="images/indexBuilding.png" class="page1-building"/>
+			<img src="images/endAvatar.png" class="page1-avatar"/>
+		</div>
+		<div class="page page2">
+			<img src="images/wasBg.jpg" class="page2-bg"/>
+			<img src="images/wasFarm.png" class="page2-farm"/>
+			<img src="images/wasIT.png" class="page2-it"/>
+		</div>
+		<div class="page page3">
+			<!--场景一-->
+			<img src="images/earlyBg.jpg" class="page3-bg"/>
+			<img src="images/lastBusStation.png" class="page3-station"/>
+			<img src="images/bus.png" class="page3-bus"/>
+			<img src="images/lastBusAvatar.png" class="page3-avatar"/>
+			<img src="images/earlyTitle.png" class="page3-title"/>
+			<img src="images/lastBusTitle.png" class="page3-bustitle"/>
+			
+			<!--场景二-->
+			<img src="images/myTeamWall.png" class="page3-wall"/>
+			<img src="images/myTeamAvatar.png" class="page3-teamavatar"/>
+			<img src="images/myTeamSpace.png" class="page3-space"/>
+			<img src="images/myteamWhereTxt.png" class="page3-where"/>
+			
+		</div>
+		<div class="page page4">
+			<img src="images/lightOffBg.jpg" class="page4-bg"/>
+			<img src="images/lightOff.png" class="page4-off" onclick="start(this)"/>
+			<img src="images/clickGuide.png" class="page4-guide"/>
+			<img src="images/cornerTitle.png" class="page4-title"/>
+			<!--场景二-->
+			<img src="images/lightOnBg.jpg" class="page4-onbg"/>
+			<img src="images/weKnowYou.png" class="page4-you"/>
+		</div>
+		
+	</div>
+	<!--添加up图标-->
+		<img src="images/arrow-up.png" class="up"/>
+		<!--添加音乐图表-->
+		<img src="images/musicBtn.png" class="musicbtn" onclick="playpause(this)"/>
+		<!--添加音乐-->
+		<audio src="mp3/music.mp3" autoplay="autoplay" id="musicplayer"></audio>
+</body>
+<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
